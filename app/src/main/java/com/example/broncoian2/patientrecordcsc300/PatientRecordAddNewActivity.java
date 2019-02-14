@@ -32,7 +32,7 @@ public class PatientRecordAddNewActivity extends AppCompatActivity {
         Core.addPatientRecord(pr);
         pr.display();
         this.finish();
-
+ 
     }
 
 }
