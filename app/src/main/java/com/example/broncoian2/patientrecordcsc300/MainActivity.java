@@ -11,6 +11,7 @@ import static com.example.broncoian2.patientrecordcsc300.R.layout.list_view_row;
 
 public class MainActivity extends AppCompatActivity {
     private ListView listView;
+    private PatientRecordAddNewActivity aa;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ArrayAdapter<String> aa = new ArrayAdapter<String >(this, list_view_row,Core.bballplayerStrings);
+        this.aa = new PatientRecordAddNewActivity(this,R.layout.list_view_row, Core.thePatients);
         this.listView  = (ListView) this.findViewById(R.id.listView);
         this.listView.setAdapter(aa);
 

@@ -3,7 +3,7 @@ package com.example.broncoian2.patientrecordcsc300;
 public class Core
 {
 
-    private static PatientRecord [] thePatients = new PatientRecord [1000];
+    public static PatientRecord [] thePatients = new PatientRecord [1000];
     public static String[] bballplayerStrings = new String [1000];
 
     private static int numberOfPatients = 0;
